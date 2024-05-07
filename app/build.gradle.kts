@@ -28,6 +28,11 @@ plugins {
     alias(libs.plugins.lsplugin.apksign)
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
 apksign {
     storeFileProperty = "androidStoreFile"
     storePasswordProperty = "androidStorePassword"
